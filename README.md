@@ -1,12 +1,12 @@
 # LegalSearcher
 ## Docker Image
-Para instalar la imagen de Docker es necesario seguir la siguiente ![Clase de Platzi](https://platzi.com/clases/1912-intro-elasticsearch/28674-poner-a-correr-elasticsearch/)
+To install the Docker image, you must follow the next [Platzi Class](https://platzi.com/clases/1912-intro-elasticsearch/28674-poner-a-correr-elasticsearch/)
 
 ## ETL Process
-All the legal sources used on this projet were extracted from the site of ![Bogota's Town Hall](https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=9035). Then, by an EDA that you can look on the jupyter notebook ![etl_legal_sources](https://github.com/Searcher-PlatziMaster/LegalSearcher/blob/main/ElasticSearch/etl_legal_codes.ipynb) and recreate with the docker image up.
+All the legal sources used on this projet were extracted from the site of [Bogota's Town Hall](https://www.alcaldiabogota.gov.co/sisjur/normas/Norma1.jsp?i=9035). Then, by an EDA that you can look on the jupyter notebook [etl_legal_sources](https://github.com/Searcher-PlatziMaster/LegalSearcher/blob/main/ElasticSearch/etl_legal_codes.ipynb) and recreate with the docker image up.
 
 ## Analysis of queries
-The notebook of ![tunning_sandbox](https://github.com/Searcher-PlatziMaster/LegalSearcher/blob/main/ElasticSearch/tuning_sandbox.ipynb) you can take a quick look of the behaviour of the four queries that we can use. Even though ElasticSearch has a lot of query types, for all flavours. In our case that is lacking of numbers, and that is required really specific text on the same order, must of the queries don't retrieve a big change that pays the invested time. Other case is the embeddings model, that does not only give us a big challenge, but a best response once is running.
+The notebook of [tunning_sandbox](https://github.com/Searcher-PlatziMaster/LegalSearcher/blob/main/ElasticSearch/tuning_sandbox.ipynb) you can take a quick look of the behaviour of the four queries that we can use. Even though ElasticSearch has a lot of query types, for all flavours. In our case that is lacking of numbers, and that is required really specific text on the same order, must of the queries don't retrieve a big change that pays the invested time. Other case is the embeddings model, that does not only give us a big challenge, but a best response once is running.
 
 ## Problem Statement:
 A client requires the construction of an application that works as a search engine on the political constitution of Colombia (available online) in which, through this, the ordinary citizen can consult articles related to a compound word or by tags, that is, if the client wanted to search for "human rights" or "rights" the filter could be precise and show information from the text that is related to its tags.
